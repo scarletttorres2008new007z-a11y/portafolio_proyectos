@@ -464,21 +464,21 @@ footer{border-top:2px solid var(--fg)}
 
 /* ===== Educación y materias ===== */
 .edu{position:relative;display:grid;gap:.4rem;box-shadow:8px 8px 0 var(--blue)}
-.edu h3{color:var(--ink);font-size:.8rem;line-height:1.6;margin-top:.6rem}
+.edu h3{color:var(--ink);font-size:.8rem;line-height:1.6}
 .edu p{color:#333;font-size:.92rem}
 .edu .sticker{justify-self:start}
 .cv-sub{font-size:.6rem;color:var(--blue);letter-spacing:.08em;margin:2rem 0 1rem}
-.courses{list-style:none;display:grid;gap:.6rem}
-.courses li{display:grid;grid-template-columns:4.6rem 1fr auto;align-items:center;gap:1rem;padding:.75rem 1rem;border:2px solid var(--fg);background:var(--bg-2);transition:transform .2s, border-color .2s, background .2s}
-.courses li:hover{transform:translateX(6px);border-color:var(--yellow);background:#1b171b}
+.courses{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1rem}
+.courses li{display:flex;flex-direction:column;gap:.9rem;padding:1.1rem 1.2rem;border:2px solid var(--fg);background:var(--bg-2);box-shadow:5px 5px 0 var(--pink);transition:transform .2s, box-shadow .2s;min-width:0}
+.courses li:nth-child(3n+2){box-shadow:5px 5px 0 var(--yellow)}
+.courses li:nth-child(3n){box-shadow:5px 5px 0 var(--blue)}
+.courses li:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--pink)}
+.course-head{display:flex;flex-direction:column;gap:.35rem}
 .courses .code{font-family:var(--pixel);font-size:.5rem;color:var(--yellow);letter-spacing:.08em}
-.courses .name{font-size:.9rem;min-width:0}
-.courses .sticker{font-size:.42rem;white-space:nowrap}
-@media (max-width:560px){
-  .courses li{grid-template-columns:1fr auto;gap:.5rem .8rem}
-  .courses .code{grid-column:1/-1}
-  .courses .code:empty{display:none}
-}
+.courses .code:empty{display:none}
+.courses .name{font-size:.95rem;font-weight:700;line-height:1.35}
+.courses .chip{font-size:.75rem;padding:.25rem .55rem}
+.courses .chip:first-child{border-color:var(--yellow);color:var(--yellow)}
 
 /* ===== Efectos ===== */
 .reveal{transition-delay:calc(var(--d,0) * 70ms)}
@@ -522,7 +522,7 @@ footer{border-top:2px solid var(--fg)}
   .marquee,.nav,.float-cta,footer,.no-print,.cta-band,.skip,.wipe,.progress,.cursor{display:none!important}
   .tech-ico{box-shadow:none!important}
   .tech-name,.courses .name,.courses .code,.tech-group h3,.cv-sub{color:#000!important}
-  .courses li{background:#fff;border-color:#000}
+  .courses li{background:#fff;border-color:#000;box-shadow:none!important}
   html,body{background:#fff;color:#000}
   p,.lead,.timeline p,.chip,h1,h2,h3,.kv li,.timeline .when{color:#000!important}
   .chip,.chip.hot{border-color:#000;color:#000}
