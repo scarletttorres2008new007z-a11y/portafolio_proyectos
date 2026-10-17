@@ -4,7 +4,13 @@ import { mkdirSync } from 'node:fs';
 // nombre: [url, capturas extra al hacer scroll, texto del botón que abre la intro]
 // Uso: node tools/capturas.mjs            (todos)
 //      node tools/capturas.mjs cafe-flores (solo los que nombres)
+const DB = 'https://cafe-don-bosco-production.up.railway.app';
 const sitios = {
+  'don-bosco': [DB, false],
+  'don-bosco-tienda': [`${DB}/tienda`, true],
+  'don-bosco-menu': [`${DB}/tienda/menu`, false],
+  'don-bosco-producto': [`${DB}/tienda/producto?id=1`, false],
+  'don-bosco-login': [`${DB}/login`, false],
   'descubre-el-salvador': ['https://descubreelsalvador.netlify.app/', true],
   'cielo-de-flores': ['https://cielo-de-flores-demo.netlify.app/', true, 'Quiero mi café'],
   'cafe-flores': ['https://cafeflores.netlify.app/', true, 'Quiero mi café'],
