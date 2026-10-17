@@ -3,7 +3,7 @@ SCARLETT TORRES — PORTFOLIO (HTML/CSS/JS)
 Estructura:
   index.html            Inicio
   projects.html         Proyectos (con filtros)
-  projects/*.html       Un caso de estudio por proyecto (7)
+  projects/*.html       Un caso de estudio por proyecto (8)
   services.html         Servicios y preguntas frecuentes
   about.html            Sobre mí · CV (el botón "Descargar CV" guarda la página como PDF)
   contact.html          Contacto
