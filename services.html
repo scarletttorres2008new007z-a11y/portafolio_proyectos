@@ -1,63 +1,191 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Servicios — Scarlett Torres</title>
-<meta name="description" content="Servicios de diseño y desarrollo web: páginas básicas, intermedias y premium.">
-<link rel="stylesheet" href="css/styles.css"></head><body>
+<meta name="description" content="Diseño y desarrollo de landing pages, sitios multipágina y webs con backend y panel de gestión.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Servicios — Scarlett Torres">
+<meta property="og:description" content="Diseño y desarrollo de landing pages, sitios multipágina y webs con backend y panel de gestión.">
+<meta property="og:image" content="assets/shots/lumiere-cine.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230a0a0a'/%3E%3Cpath d='M7 1h2v4h4v2h2v2h-2v2h-2v4H9v-2H7v2H5v-4H3V9H1V7h2V5h4z' fill='%23d9f24b'/%3E%3Cpath d='M7 5h2v6H7z' fill='%23ff2d87'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
 
-<div class="marquee"><div class="marquee-track">
-<span>SERVICIOS ✦ PÁGINAS BÁSICAS ✦ INTERMEDIAS ✦ PREMIUM ✦</span>
-<span>SERVICIOS ✦ PÁGINAS BÁSICAS ✦ INTERMEDIAS ✦ PREMIUM ✦</span>
+<div class="marquee yellow" aria-hidden="true"><div class="marquee-track">
+<span>SERVICIOS ✦ LANDING PAGES ✦ SITIOS MULTIPÁGINA ✦ WEB + SISTEMA ✦ COTIZACIÓN SIN COMPROMISO ✦</span>
+<span>SERVICIOS ✦ LANDING PAGES ✦ SITIOS MULTIPÁGINA ✦ WEB + SISTEMA ✦ COTIZACIÓN SIN COMPROMISO ✦</span>
 </div></div>
 
-<nav class="nav">
+<nav class="nav" aria-label="Principal">
   <a class="logo" href="index.html">★ SCARLETT.T</a>
-  <button class="burger">≡ MENU</button>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">Sobre mí</a></li>
-    <li><a href="services.html">Servicios</a></li>
+  <button class="burger" aria-expanded="false" aria-controls="menu">≡ MENÚ</button>
+  <ul id="menu">
+    <li><a href="index.html">Inicio</a></li>
     <li><a href="projects.html">Proyectos</a></li>
+    <li><a href="services.html">Servicios</a></li>
+    <li><a href="about.html">Sobre mí · CV</a></li>
     <li><a href="contact.html">Contacto</a></li>
+    <li><a class="nav-cta" href="contact.html">★ Cotizar proyecto</a></li>
   </ul>
 </nav>
 
-<header class="hero">
-  <p class="eyebrow">★ Services</p>
-  <h1>¿QUÉ PUEDO HACER POR TI?</h1>
-  <p class="lead">Tres niveles de servicio según la complejidad y los objetivos de tu proyecto.</p>
+<main id="main">
+<header class="page-hero">
+  <div class="container">
+    <p class="eyebrow">★ Services</p>
+    <h1>¿QUÉ PUEDO HACER POR TU NEGOCIO?</h1>
+    <p class="lead">Páginas web a medida que muestran tu marca como es y le facilitan a tus clientes reservar, pedir o escribirte.</p>
+  </div>
 </header>
 
 <section class="container">
-  <div class="grid grid-3">
-    <div class="card-paper">
-      <span class="sticker">Nivel 01</span>
-      <h3 style="margin-top:1rem">Páginas básicas</h3>
-      <p>Landing pages, portafolios y sitios informativos. Diseño limpio, mobile-first y entrega rápida.</p>
-      <p style="margin-top:1rem"><strong>Incluye:</strong> diseño UI, hasta 4 secciones, formulario de contacto, SEO base.</p>
+  
+  <div class="plans">
+    <div class="card-paper plan reveal">
+      <span class="sticker">Landing page</span>
+      <h3>Una página que vende</h3>
+      <p class="ideal">Ideal para barberías, floristerías, cafeterías y emprendimientos.</p>
+      <ul>
+        <li>Diseño a medida de una página completa</li>
+        <li>Reservas o pedidos por WhatsApp</li>
+        <li>Galería, menú o catálogo con precios</li>
+        <li>Horario, mapa y redes sociales</li>
+        <li>Adaptada a celular y publicada</li>
+      </ul>
+      <p class="example">Como <a href="projects/navaja-barber.html">NAVAJA</a>, <a href="projects/casa-petalo.html">Casa Pétalo</a> o <a href="projects/cielo-de-flores.html">Cielo de Flores</a>.</p>
+      <a class="btn small" href="contact.html?tipo=landing">Cotizar landing →</a>
     </div>
-    <div class="card-paper alt">
-      <span class="sticker pink">Nivel 02</span>
-      <h3 style="margin-top:1rem">Páginas intermedias</h3>
-      <p>Sitios con múltiples secciones, animaciones, formularios y experiencias completas.</p>
-      <p style="margin-top:1rem"><strong>Incluye:</strong> múltiples páginas, animaciones, integraciones, panel simple.</p>
+    <div class="card-paper alt plan reveal">
+      <span class="sticker pink badge">Más completo</span>
+      <span class="sticker pink">Sitio multipágina</span>
+      <h3>Tu marca con todo su mundo</h3>
+      <p class="ideal">Ideal para negocios con mucho que mostrar: turismo, cines, restaurantes.</p>
+      <ul>
+        <li>Varias páginas con navegación clara</li>
+        <li>Funciones a medida: filtros, compras, membresías</li>
+        <li>Identidad visual y animaciones propias</li>
+        <li>Formularios con validación</li>
+        <li>SEO básico para aparecer en Google</li>
+      </ul>
+      <p class="example">Como <a href="projects/lumiere-cine.html">Lumière Ciné</a> o <a href="projects/descubre-el-salvador.html">Descubre El Salvador</a>.</p>
+      <a class="btn small" href="contact.html?tipo=multipagina">Cotizar sitio →</a>
     </div>
-    <div class="card-paper blue">
-      <span class="sticker blue">Nivel 03</span>
-      <h3 style="margin-top:1rem">Páginas premium</h3>
-      <p>Desarrollos a medida con experiencias visuales avanzadas e interacciones únicas.</p>
-      <p style="margin-top:1rem"><strong>Incluye:</strong> diseño 100% custom, motion, integración con backend, performance.</p>
+    <div class="card-paper blue plan reveal">
+      <span class="sticker blue">Web + sistema</span>
+      <h3>Página con backend</h3>
+      <p class="ideal">Ideal para clínicas y negocios que reciben citas o solicitudes.</p>
+      <ul>
+        <li>Landing o sitio completo</li>
+        <li>Backend que recibe las solicitudes</li>
+        <li>Panel de gestión con acceso privado</li>
+        <li>Cotizadores, cuestionarios y herramientas</li>
+        <li>Publicado con servidor</li>
+      </ul>
+      <p class="example">Como <a href="projects/aeod-odontologia.html">AEOD Odontología</a>.</p>
+      <a class="btn small" href="contact.html?tipo=sistema">Cotizar sistema →</a>
     </div>
   </div>
 </section>
 
-<section class="container center">
-  <div class="card-paper" style="display:inline-block;text-align:left;max-width:640px">
-    <h3>¿Trabajamos juntos?</h3>
-    <p>Cuéntame sobre tu idea y te respondo con una propuesta personalizada.</p>
-    <a class="btn mt-2" href="contact.html">Iniciar proyecto →</a>
+<section class="container">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">★ Todo proyecto incluye</p>
+      <h2>Lo que siempre recibes</h2>
+    </div>
+  </div>
+  <div class="grid grid-4">
+    <div class="card-paper reveal"><h3>Diseño a medida</h3><p>Nada de plantillas. Colores, tipografía y estilo pensados para tu marca.</p></div>
+    <div class="card-paper alt reveal"><h3>Listo para celular</h3><p>Se ve y funciona bien en teléfonos, tablets y computadoras.</p></div>
+    <div class="card-paper blue reveal"><h3>Botones que venden</h3><p>WhatsApp, reservas, llamadas y mapas a un toque de distancia.</p></div>
+    <div class="card-paper reveal"><h3>Publicado en internet</h3><p>Te entrego tu página funcionando, con su link para compartir.</p></div>
   </div>
 </section>
 
-<footer><div>© 2026 SCARLETT TORRES</div><div><a href="contact.html">CONTACTO</a></div></footer>
+<section class="container">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">★ Cómo trabajamos</p>
+      <h2>Proceso en 4 pasos</h2>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><span class="n">01</span><h3>Hablamos</h3><p>Me cuentas de tu negocio y lo que quieres lograr. Te envío propuesta y cotización.</p></div>
+    <div class="step reveal"><span class="n">02</span><h3>Diseño</h3><p>Ves una propuesta visual de tu página antes de construirla.</p></div>
+    <div class="step reveal"><span class="n">03</span><h3>Desarrollo</h3><p>Construyo tu sitio y te comparto un link para revisar avances.</p></div>
+    <div class="step reveal"><span class="n">04</span><h3>Lanzamiento</h3><p>Publico tu página, reviso que todo funcione y te la entrego.</p></div>
+  </div>
+</section>
+
+<section class="container" id="preguntas">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">★ FAQ</p>
+      <h2>Preguntas frecuentes</h2>
+    </div>
+  </div>
+  <div class="faq">
+    <details open><summary>¿Cuánto cuesta una página web?</summary><p>Depende de cuántas secciones necesitas y de las funciones que quieras, como reservas, catálogo o panel de gestión. Cuéntame tu idea y te envío una cotización sin compromiso.</p></details>
+    <details><summary>¿Cuánto tiempo tarda?</summary><p>Depende del tamaño del proyecto. Una landing es lo más rápido; un sitio multipágina o con sistema lleva más. En la propuesta te doy fechas claras.</p></details>
+    <details><summary>¿Se va a ver bien en celular?</summary><p>Sí. Diseño pensando primero en el celular, porque ahí te va a encontrar la mayoría de tus clientes. Puedes revisarlo en cualquiera de mis proyectos.</p></details>
+    <details><summary>¿Puedo ver avances antes de que esté lista?</summary><p>Sí. Te comparto un link en vivo para que revises el diseño y pidas ajustes durante el proceso.</p></details>
+    <details><summary>¿Me ayudas a publicarla?</summary><p>Sí, te la entrego publicada y funcionando en internet. Mis proyectos están en Netlify y Railway. Si quieres un dominio propio, como tunegocio.com, te ayudo a conectarlo.</p></details>
+    <details><summary>¿Puedo pedir cambios después?</summary><p>Claro. Hablamos de los ajustes que necesites y de cómo mantener tu sitio al día.</p></details>
+    <details><summary>¿Trabajas solo en El Salvador?</summary><p>Trabajo de forma remota, así que puedo ayudarte estés donde estés.</p></details>
+  </div>
+</section>
+</main>
+
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>¿Tienes un negocio? Hagamos que se vea increíble en internet.</h2>
+      <p>Cuéntame tu idea y te envío una propuesta con diseño, funciones y cotización. Sin compromiso.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="contact.html">Cotizar mi página →</a>
+      <a class="btn ghost" href="projects.html">Ver proyectos</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div>
+      <a class="logo" href="index.html">★ SCARLETT.T</a>
+      <p>Diseño y desarrollo de páginas web a medida para negocios con personalidad.</p>
+    </div>
+    <div>
+      <h4>Navegar</h4>
+      <ul>
+        <li><a href="projects.html">Proyectos</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="about.html">Sobre mí · CV</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hablemos</h4>
+      <ul>
+        <li><a data-email href="#">correo</a></li>
+        <li data-whatsapp-wrap><a data-whatsapp href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a data-instagram href="#" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span data-year>2026</span> SCARLETT TORRES</span>
+    <span>HECHO A MANO CON HTML · CSS · JS</span>
+  </div>
+</footer>
+<a class="btn yellow small float-cta" href="contact.html">★ Cotizar</a>
 <script src="js/main.js"></script>
-</body></html>
+</body>
+</html>
