@@ -1,11 +1,13 @@
 import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';
 
-// nombre: [url, capturas extra al hacer scroll]
+// nombre: [url, capturas extra al hacer scroll, texto del botón que abre la intro]
+// Uso: node tools/capturas.mjs            (todos)
+//      node tools/capturas.mjs cafe-flores (solo los que nombres)
 const sitios = {
   'descubre-el-salvador': ['https://descubreelsalvador.netlify.app/', true],
-  'cielo-de-flores': ['https://cielo-de-flores-demo.netlify.app/', true],
-  'cafe-flores': ['https://cafeflores.netlify.app/', true],
+  'cielo-de-flores': ['https://cielo-de-flores-demo.netlify.app/', true, 'Quiero mi café'],
+  'cafe-flores': ['https://cafeflores.netlify.app/', true, 'Quiero mi café'],
   'aeod-landing': ['https://aeodlanding.netlify.app/', true],
   'aeod-backend': ['https://web-production-12fb4.up.railway.app', false],
   'aeod-gestion': ['https://web-production-12fb4.up.railway.app/gestion', false],
@@ -40,7 +42,9 @@ async function irA(page, frac) {
 
 mkdirSync('assets/shots', { recursive: true });
 const browser = await chromium.launch();
-for (const [nombre, [url, extra]] of Object.entries(sitios)) {
+const solo = process.argv.slice(2);
+for (const [nombre, [url, extra, intro]] of Object.entries(sitios)) {
+  if (solo.length && !solo.includes(nombre)) continue;
   for (const movil of [false, true]) {
     const page = await browser.newPage(movil
       ? { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }
@@ -51,6 +55,10 @@ for (const [nombre, [url, extra]] of Object.entries(sitios)) {
     await limpiar(page);
     const sufijo = movil ? '-movil' : '';
     if (extra && !movil) {
+      if (intro) {
+        await page.getByText(intro).first().click({ timeout: 5000 }).catch(e => console.log('aviso', nombre, e.message));
+        await page.waitForTimeout(3000);
+      }
       for (const [k, f] of [[2, .22], [3, .45], [4, .7]]) {
         await irA(page, f);
         await limpiar(page);
