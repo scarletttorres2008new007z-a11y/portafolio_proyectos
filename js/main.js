@@ -2,9 +2,9 @@
 // Cambia estos valores y se actualizan en todo el sitio.
 // whatsapp: solo números con código de país, por ejemplo '50370001234'. Déjalo vacío para ocultar WhatsApp.
 const CONTACTO = {
-  email: 'hola@scarletttorres.com',
-  whatsapp: '',
-  instagram: 'scarlett.codes',
+  email: 'torresscarlett502@gmail.com',
+  whatsapp: '50372716441',
+  instagram: 'scar_torxx_07',
 };
 
 document.documentElement.classList.add('js');
