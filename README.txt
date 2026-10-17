@@ -25,3 +25,8 @@ Actualizar las capturas:
 Cómo usar:
   Abre index.html en tu navegador, o súbelo a cualquier hosting estático
   (Netlify, GitHub Pages, Vercel...). Nada de build, nada de dependencias.
+
+Logos del stack:
+  Están en assets/icons/. Vienen de Devicon (licencia MIT) y los de Cisco y
+  Wireshark de Simple Icons (CC0). Las licencias están en la misma carpeta.
+  Las marcas pertenecen a sus dueños.
