@@ -161,3 +161,61 @@ if (flotante) {
   addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 }
+
+// ===== Efectos =====
+const calma = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Retraso escalonado para elementos que aparecen juntos
+document.querySelectorAll('.reveal').forEach(el => {
+  const hermanos = [...el.parentElement.children].filter(h => h.classList.contains('reveal'));
+  el.style.setProperty('--d', Math.min(hermanos.indexOf(el), 8));
+});
+
+// Barra de progreso de lectura
+const barra = document.querySelector('.progress');
+if (barra) {
+  const pintar = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    barra.style.setProperty('--p', max > 0 ? Math.min(scrollY / max, 1) : 0);
+  };
+  addEventListener('scroll', pintar, { passive: true });
+  addEventListener('resize', pintar);
+  pintar();
+}
+
+// Números que cuentan hacia arriba al verse
+const contadores = document.querySelectorAll('[data-count]');
+if (contadores.length && !calma && 'IntersectionObserver' in window) {
+  const contar = el => {
+    const fin = +el.dataset.count;
+    const suf = el.dataset.suffix || '';
+    const t0 = performance.now();
+    const paso = t => {
+      const k = Math.min((t - t0) / 1100, 1);
+      el.textContent = Math.round(fin * (1 - Math.pow(1 - k, 3))) + suf;
+      if (k < 1) requestAnimationFrame(paso);
+    };
+    requestAnimationFrame(paso);
+  };
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { contar(en.target); io.unobserve(en.target); } });
+  }, { threshold: .6 });
+  contadores.forEach(el => io.observe(el));
+}
+
+// Transición al cambiar de página
+const wipe = document.querySelector('.wipe');
+if (wipe && !calma) {
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[href]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (a.target === '_blank' || a.hasAttribute('download')) return;
+    const url = new URL(a.href, location.href);
+    if (url.origin !== location.origin || !/^https?:$/.test(url.protocol)) return;
+    if (url.pathname === location.pathname && url.search === location.search) return;
+    e.preventDefault();
+    wipe.classList.add('leave');
+    setTimeout(() => { location.href = url.href; }, 420);
+  });
+  addEventListener('pageshow', e => { if (e.persisted) wipe.classList.remove('leave'); });
+}
