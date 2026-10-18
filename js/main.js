@@ -107,7 +107,7 @@ document.querySelectorAll('.carousel').forEach(car => {
 // Filtros de proyectos
 const filtros = document.querySelector('[data-filters]');
 if (filtros) {
-  const cards = [...document.querySelectorAll('[data-cat]')];
+  const cards = [...filtros.parentElement.querySelector('.proj-grid').querySelectorAll('[data-cat]')];
   filtros.querySelectorAll('button').forEach(btn => {
     const f = btn.dataset.filter;
     const n = f === 'todos' ? cards.length : cards.filter(c => c.dataset.cat.split(' ').includes(f)).length;

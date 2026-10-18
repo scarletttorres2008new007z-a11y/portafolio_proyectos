@@ -220,6 +220,7 @@ strong{color:var(--fg)}
 .proj-card .meta a:hover{color:var(--pink)}
 .proj-card .meta .live{background:var(--ink);color:var(--yellow);padding:.5rem .7rem;border:2px solid var(--ink)}
 .proj-card .meta .live:hover{background:var(--pink);color:#fff}
+.proj-card .meta .live.off,.proj-card .meta .live.off:hover{background:transparent;color:#555;border-style:dashed;border-color:#999}
 .proj-card .arrow{font-size:1.1rem;transition:transform .2s}
 .proj-card:hover .arrow{transform:translateX(6px)}
 .proj-card.wide{grid-column:1/-1;display:grid;grid-template-columns:1.3fr 1fr}
@@ -237,6 +238,8 @@ strong{color:var(--fg)}
 .filters button:hover{border-color:var(--pink);color:var(--pink)}
 .filters button[aria-pressed="true"]{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
 .filters button .n{opacity:.6;margin-left:.3rem}
+.filters .sw-jump{font-family:var(--pixel);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;padding:.75rem .9rem;border:2px dashed var(--blue);color:var(--blue);line-height:1.4;transition:all .15s}
+.filters .sw-jump:hover{border-style:solid;background:var(--blue);color:var(--ink)}
 
 /* ===== Capabilities (lo que puedo construir) ===== */
 .caps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));border-top:2px solid var(--fg);border-left:2px solid var(--fg)}
@@ -490,6 +493,10 @@ footer{border-top:2px solid var(--fg)}
 .courses .name{font-size:.95rem;font-weight:700;line-height:1.35}
 .courses .chip{font-size:.75rem;padding:.25rem .55rem}
 .courses .chip:first-child{border-color:var(--yellow);color:var(--yellow)}
+
+/* ===== Software ===== */
+.sw-section{padding-top:5rem;scroll-margin-top:90px}
+.sw-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
 
 /* ===== Efectos ===== */
 .reveal{transition-delay:calc(var(--d,0) * 70ms)}
