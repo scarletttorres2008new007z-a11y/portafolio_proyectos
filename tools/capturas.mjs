@@ -21,7 +21,7 @@ const sitios = {
   'lumiere-cine': ['https://lumiere-cine-sv.netlify.app/', true],
   'navaja-barber': ['https://lanavajacut.netlify.app/', true],
   'el-caballero': ['https://elcaballerobarber.netlify.app/', true],
-  'la-dental': ['https://ladentalsv.netlify.app/', true],
+  'la-dental': ['https://ladentalsv.netlify.app/', true, 'Quiero mi sonrisa'],
 };
 
 const ocultar = `
@@ -61,11 +61,11 @@ for (const [nombre, [url, extra, intro]] of Object.entries(sitios)) {
     await page.waitForTimeout(9000);
     await limpiar(page);
     const sufijo = movil ? '-movil' : '';
+    if (intro) {
+      await page.getByText(intro).first().click({ timeout: 5000 }).catch(e => console.log('aviso', nombre, e.message));
+      await page.waitForTimeout(3000);
+    }
     if (extra && !movil) {
-      if (intro) {
-        await page.getByText(intro).first().click({ timeout: 5000 }).catch(e => console.log('aviso', nombre, e.message));
-        await page.waitForTimeout(3000);
-      }
       for (const [k, f] of [[2, .22], [3, .45], [4, .7]]) {
         await irA(page, f);
         await limpiar(page);
