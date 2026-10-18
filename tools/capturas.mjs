@@ -21,6 +21,7 @@ const sitios = {
   'lumiere-cine': ['https://lumiere-cine-sv.netlify.app/', true],
   'navaja-barber': ['https://lanavajacut.netlify.app/', true],
   'el-caballero': ['https://elcaballerobarber.netlify.app/', true],
+  'la-dental': ['https://ladentalsv.netlify.app/', true],
 };
 
 const ocultar = `

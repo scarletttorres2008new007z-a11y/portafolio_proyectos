@@ -1,0 +1,20 @@
+name: capturas
+on:
+  push:
+    branches: [claude/portfolio-redesign-bffl24]
+    paths: ['tools/capturas.mjs', '.github/workflows/capturas.yml']
+permissions:
+  contents: write
+jobs:
+  capturas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i --no-save playwright@1.56.1 && npx playwright install --with-deps chromium
+      - run: node tools/capturas.mjs la-dental
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/shots
+          git commit -m "Capturas de los proyectos en vivo"
+          git push
