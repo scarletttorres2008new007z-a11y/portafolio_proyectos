@@ -1,81 +1,208 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sobre mí — Scarlett Torres</title>
-<meta name="description" content="Conoce a Scarlett Torres: diseñadora web, stack frontend, objetivos y filosofía de diseño.">
-<link rel="stylesheet" href="css/styles.css"></head><body>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sobre mí · CV — Scarlett Torres</title>
+<meta name="description" content="CV de Scarlett Torres: diseñadora y desarrolladora web. Perfil, habilidades, proyectos y forma de trabajo.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sobre mí · CV — Scarlett Torres">
+<meta property="og:description" content="CV de Scarlett Torres: diseñadora y desarrolladora web. Perfil, habilidades, proyectos y forma de trabajo.">
+<meta property="og:image" content="assets/shots/lumiere-cine.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230a0a0a'/%3E%3Cpath d='M7 1h2v4h4v2h2v2h-2v2h-2v4H9v-2H7v2H5v-4H3V9H1V7h2V5h4z' fill='%23d9f24b'/%3E%3Cpath d='M7 5h2v6H7z' fill='%23ff2d87'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="wipe" aria-hidden="true"><span>★ SCARLETT.T</span></div>
+<div class="progress" aria-hidden="true"></div>
 
-<div class="marquee yellow"><div class="marquee-track">
-<span>SOBRE MÍ ✦ ABOUT ME ✦ DESIGN + CODE + CRAFT ✦</span>
-<span>SOBRE MÍ ✦ ABOUT ME ✦ DESIGN + CODE + CRAFT ✦</span>
+<div class="marquee yellow" aria-hidden="true"><div class="marquee-track">
+<span>SOBRE MÍ ✦ CURRÍCULUM ✦ DISEÑO + CÓDIGO ✦ TÉCNICO EN COMPUTACIÓN · UDB ✦</span>
+<span>SOBRE MÍ ✦ CURRÍCULUM ✦ DISEÑO + CÓDIGO ✦ TÉCNICO EN COMPUTACIÓN · UDB ✦</span>
 </div></div>
 
-<nav class="nav">
+<nav class="nav" aria-label="Principal">
   <a class="logo" href="index.html">★ SCARLETT.T</a>
-  <button class="burger">≡ MENU</button>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">Sobre mí</a></li>
-    <li><a href="services.html">Servicios</a></li>
+  <button class="burger" aria-expanded="false" aria-controls="menu">≡ MENÚ</button>
+  <ul id="menu">
+    <li><a href="index.html">Inicio</a></li>
     <li><a href="projects.html">Proyectos</a></li>
+    <li><a href="services.html">Servicios</a></li>
+    <li><a href="about.html">Sobre mí · CV</a></li>
     <li><a href="contact.html">Contacto</a></li>
+    <li><a class="nav-cta" href="contact.html">★ Cotizar proyecto</a></li>
   </ul>
 </nav>
 
-<header class="hero">
-  <p class="eyebrow">★ About me</p>
-  <h1>SCARLETT TORRES</h1>
-  <p class="lead">Diseñadora Web & Creadora Digital</p>
+<main id="main">
+<header class="page-hero">
+  <div class="container">
+    <p class="eyebrow">★ Sobre mí · CV</p>
+    <h1>SCARLETT TORRES</h1>
+    <p class="lead">Diseñadora y desarrolladora web. Creo páginas con identidad propia que, además de verse bien, ayudan a los negocios a conseguir clientes.</p>
+  </div>
 </header>
 
 <section class="container">
-  <div class="grid grid-2">
+  <div class="cv-grid">
+    <aside class="cv-side">
+      <figure class="avatar photo">
+        <picture>
+          <source type="image/webp" srcset="assets/img/scarlett-360.webp 360w, assets/img/scarlett-720.webp 720w" sizes="(max-width:900px) 240px, 320px">
+          <img src="assets/img/scarlett-720.jpg" srcset="assets/img/scarlett-360.jpg 360w, assets/img/scarlett-720.jpg 720w" sizes="(max-width:900px) 240px, 320px" alt="Foto de Scarlett Torres" width="720" height="720" decoding="async">
+        </picture>
+        <figcaption class="sticker pink avatar-tag">¡Hola, soy yo!</figcaption>
+      </figure>
+      <div class="card-paper alt">
+        <ul class="kv">
+          <li><span>Rol</span>Diseñadora y desarrolladora web</li>
+          <li><span>Formación</span>Técnico en Computación · Universidad Don Bosco</li>
+          <li><span>Enfoque</span>Frontend, backend y diseño UI para negocios</li>
+          <li><span>Base</span>El Salvador · trabajo remoto</li>
+          <li><span>Disponibilidad</span>Proyectos freelance</li>
+          <li><span>Correo</span><a data-email href="mailto:torresscarlett502@gmail.com">torresscarlett502@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="btn-row no-print">
+        <button class="btn yellow" type="button" onclick="window.print()">⬇ Descargar CV</button>
+        <a class="btn" href="contact.html">Contratar →</a>
+      </div>
+    </aside>
+
     <div>
-      <p class="eyebrow">Quién soy</p>
-      <p>Soy <strong>Scarlett Torres</strong>, diseñadora web y creadora de experiencias digitales enfocada en desarrollar páginas modernas, funcionales y visualmente atractivas.</p>
-      <p class="mt-2">Me especializo en transformar ideas en sitios web que combinan diseño, tecnología y creatividad, creando soluciones digitales para marcas, emprendimientos y proyectos personales.</p>
+      <div class="cv-block">
+        <p class="eyebrow">★ Perfil</p>
+        <h2>Quién soy</h2>
+        <p>Soy <strong>Scarlett Torres</strong>, diseñadora y desarrolladora web, y estudio Técnico en Computación en la Universidad Don Bosco. Me especializo en transformar ideas en sitios modernos, funcionales y con personalidad para marcas, emprendimientos y negocios locales.</p>
+        <p class="mt-1">He diseñado 10 proyectos web para industrias muy distintas. El más completo es Café Don Bosco, un sistema en Java con tienda en línea, panel de administración, inventario y 83 pruebas unitarias. También he hecho sitios para un cine de autor, dos clínicas dentales, una floristería, dos barberías, otra cafetería y turismo, y una propuesta para una tienda de camisas de fútbol. En cada uno cuido tanto el diseño como lo que el sitio hace: reservas, compras, cotizadores y paneles de gestión.</p>
+        <p class="mt-1">Mi aprendizaje no se detiene. Sigo explorando nuevas tecnologías y herramientas para ofrecer mejores soluciones en cada proyecto.</p>
+      </div>
+
+      <div class="cv-block">
+        <p class="eyebrow">★ Formación</p>
+        <h2>Educación</h2>
+        <div class="card-paper blue edu reveal">
+                    <h3>Técnico en Computación</h3>
+          <p>Universidad Don Bosco · El Salvador</p>
+        </div>
+        <h3 class="cv-sub">Lo que sé por cada materia</h3>
+        <ul class="courses">
+          <li class="reveal"><div class="course-head"><span class="code"></span><span class="name">Lenguajes de Marcado y Estilo Web</span></div><div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Diseño responsive</span><span class="chip">Maquetación con Flexbox y Grid</span></div></li>
+          <li class="reveal"><div class="course-head"><span class="code">PAL404</span><span class="name">Programación de Algoritmos</span></div><div class="chips"><span class="chip">Lógica de programación</span><span class="chip">Estructuras de control</span><span class="chip">Arreglos y funciones</span><span class="chip">Resolución de problemas</span></div></li>
+          <li class="reveal"><div class="course-head"><span class="code">POO404</span><span class="name">Programación Orientada a Objetos</span></div><div class="chips"><span class="chip">Java</span><span class="chip">Clases y objetos</span><span class="chip">Herencia y polimorfismo</span><span class="chip">Interfaces</span></div></li>
+          <li class="reveal"><div class="course-head"><span class="code">DAW404</span><span class="name">Desarrollo de Aplicaciones Web con Software Interpretado en el Cliente</span></div><div class="chips"><span class="chip">JavaScript</span><span class="chip">DOM y eventos</span><span class="chip">Validación de formularios</span><span class="chip">Consumo de APIs</span></div></li>
+          <li class="reveal"><div class="course-head"><span class="code">DSP404</span><span class="name">Desarrollo de Aplicaciones con Software Propietario</span></div><div class="chips"><span class="chip">C#</span><span class="chip">.NET</span><span class="chip">Visual Studio</span><span class="chip">Aplicaciones de escritorio</span></div></li>
+          <li class="reveal"><div class="course-head"><span class="code">ASB404</span><span class="name">Análisis y Diseño de Sistemas y Base de Datos</span></div><div class="chips"><span class="chip">SQL</span><span class="chip">MySQL</span><span class="chip">Modelo entidad-relación</span><span class="chip">Normalización</span><span class="chip">Análisis de requerimientos</span></div></li>
+          <li class="reveal"><div class="course-head"><span class="code">REC404</span><span class="name">Redes de Comunicación</span></div><div class="chips"><span class="chip">Modelo OSI y TCP/IP</span><span class="chip">Direccionamiento IP</span><span class="chip">Subredes</span><span class="chip">Configuración de redes</span></div></li>
+          <li class="reveal"><div class="course-head"><span class="code">SPL404</span><span class="name">Servidores en Plataformas Libres</span></div><div class="chips"><span class="chip">Linux</span><span class="chip">Servidores web</span><span class="chip">Apache Tomcat</span><span class="chip">Línea de comandos</span></div></li>
+          <li class="reveal"><div class="course-head"><span class="code">ASN441</span><span class="name">Administración de Servicios en la Nube</span></div><div class="chips"><span class="chip">Despliegue en la nube</span><span class="chip">Railway</span><span class="chip">Netlify</span><span class="chip">Bases de datos en la nube</span></div></li>
+        </ul>
+      </div>
+
+      <div class="cv-block" id="stack">
+        <p class="eyebrow">★ Stack</p>
+        <h2>Lenguajes, editores y software</h2>
+        <div class="tech-groups">
+          <div class="tech-group"><h3>Frontend</h3><ul class="tech-grid"><li class="tech"><span class="tech-ico"><img src="assets/icons/html5.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">HTML5</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/css3.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">CSS3</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/javascript.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">JavaScript</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/typescript.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">TypeScript</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/react.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">React</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/tailwindcss.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Tailwind CSS</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/bootstrap.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Bootstrap</span></li></ul></div>
+          <div class="tech-group"><h3>Lenguajes y bases de datos</h3><ul class="tech-grid"><li class="tech"><span class="tech-ico"><img src="assets/icons/java.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Java</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/csharp.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">C#</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/dot-net.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">.NET</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/mysql.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">MySQL</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/sqlserver.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">SQL Server</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/junit.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">JUnit</span></li></ul></div>
+          <div class="tech-group"><h3>Redes y sistemas operativos</h3><ul class="tech-grid"><li class="tech"><span class="tech-ico"><img src="assets/icons/cisco.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Cisco</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/wireshark.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Wireshark</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/linux.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Linux</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/ubuntu.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Ubuntu</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/debian.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Debian</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/windows.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Windows</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/bash.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Bash</span></li></ul></div>
+          <div class="tech-group"><h3>Servidores y nube</h3><ul class="tech-grid"><li class="tech"><span class="tech-ico"><img src="assets/icons/apache.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Apache</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/tomcat.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Tomcat</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/aws.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">AWS</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/azure.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Azure</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/googlecloud.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Google Cloud</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/railway.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Railway</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/netlify.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Netlify</span></li></ul></div>
+          <div class="tech-group"><h3>Editores y herramientas</h3><ul class="tech-grid"><li class="tech"><span class="tech-ico"><img src="assets/icons/vscode.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">VS Code</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/intellij.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">IntelliJ IDEA</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/visualstudio.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Visual Studio</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/git.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Git</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/github.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">GitHub</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/maven.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Maven</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/postman.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Postman</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/figma.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Figma</span></li><li class="tech"><span class="tech-ico"><img src="assets/icons/canva.svg" alt="" width="40" height="40" loading="lazy" decoding="async"></span><span class="tech-name">Canva</span></li></ul></div>
+        </div>
+        <div class="skill-group mt-2">
+          <h3>También sé</h3>
+          <div class="chips"><span class="chip hot">Diseño UI</span><span class="chip hot">Diseño responsive</span><span class="chip">Cisco Packet Tracer</span><span class="chip">Routers y switches</span><span class="chip">Administración de servidores Linux</span><span class="chip">Máquinas virtuales</span><span class="chip">Bases de datos y SQL</span><span class="chip">API REST</span><span class="chip">Servlets y JSP</span><span class="chip">Programación orientada a objetos</span><span class="chip">Pruebas con JUnit 5 y Mockito</span><span class="chip">Control de versiones con Git</span><span class="chip">Despliegue en la nube</span><span class="chip">Accesibilidad web</span><span class="chip">Animaciones e interacción</span></div>
+        </div>
+      </div>
+
+      <div class="cv-block">
+        <p class="eyebrow">★ Experiencia</p>
+        <h2>Proyectos publicados</h2>
+        <ol class="timeline">
+          <li class="reveal"><span class="when">Web + sistema · Cafetería</span><h3>Café Don Bosco</h3><p>Sistema web completo para una cafetería: una tienda en línea donde el cliente personaliza su pedido y paga sin crear cuenta, y un panel de administración con punto de venta, inventario e historial. Todo comparte la misma base de datos. <a href="projects/cafe-don-bosco.html">Ver caso</a> · <a href="https://cafe-don-bosco-production.up.railway.app" target="_blank" rel="noopener">cafe-don-bosco-production.up.railway.app</a></p></li>
+          <li class="reveal"><span class="when">Sitio multipágina · Cine y entretenimiento</span><h3>Lumière Ciné</h3><p>Sitio para un cine de autor con cartelera por día, compra de entradas con selección de asientos y membresía con tarjeta de miembro. Se siente como entrar a la sala. <a href="projects/lumiere-cine.html">Ver caso</a> · <a href="https://lumiere-cine-sv.netlify.app/" target="_blank" rel="noopener">lumiere-cine-sv.netlify.app</a></p></li>
+          <li class="reveal"><span class="when">Landing page · Propuesta de diseño</span><h3>Ardens XI</h3><p>Propuesta de landing para una tienda de camisas de fútbol en Antiguo Cuscatlán: intro con fuego animado, clubes por liga y selecciones con bandera, una vitrina que se pinta del color del equipo con los cánticos de la afición y un pedido que se arma solo para mandarlo por Instagram. <a href="projects/ardens-xi.html">Ver caso</a></p></li>
+          <li class="reveal"><span class="when">Web + sistema · Salud dental</span><h3>AEOD Odontología</h3><p>Landing para una clínica dental con solicitud de citas, cuestionario de orientación y estimador de costos, conectada a un backend con software de gestión para el personal. <a href="projects/aeod-odontologia.html">Ver caso</a> · <a href="https://aeodlanding.netlify.app/" target="_blank" rel="noopener">aeodlanding.netlify.app</a></p></li>
+          <li class="reveal"><span class="when">Landing page · Floristería</span><h3>Casa Pétalo</h3><p>Landing para una floristería con catálogo filtrable y un constructor para armar tu propio ramo con vista 3D y precio en tiempo real. El pedido llega completo a WhatsApp. <a href="projects/casa-petalo.html">Ver caso</a> · <a href="https://floristerialanding.netlify.app/" target="_blank" rel="noopener">floristerialanding.netlify.app</a></p></li>
+          <li class="reveal"><span class="when">Landing page · Salud dental</span><h3>La Dental</h3><p>Landing para una clínica dental en Apopa con intro animada, una muela 3D que se gira, tratamientos en tarjetas deslizables, ortodoncia sin prima y un formulario que agenda la cita por WhatsApp. <a href="projects/la-dental.html">Ver caso</a> · <a href="https://ladentalsv.netlify.app/" target="_blank" rel="noopener">ladentalsv.netlify.app</a></p></li>
+          <li class="reveal"><span class="when">Landing page · Barbería</span><h3>NAVAJA Barber Studio</h3><p>Landing para una barbería con reservas por WhatsApp, una galería para elegir tu corte y una vista 360 que se gira arrastrando. <a href="projects/navaja-barber.html">Ver caso</a> · <a href="https://lanavajacut.netlify.app/" target="_blank" rel="noopener">lanavajacut.netlify.app</a></p></li>
+          <li class="reveal"><span class="when">Sitio multipágina · Turismo</span><h3>Descubre El Salvador</h3><p>Sitio turístico de seis páginas sobre destinos, cultura e historia de El Salvador, con galería, línea de tiempo y un formulario para planificar el viaje. <a href="projects/descubre-el-salvador.html">Ver caso</a> · <a href="https://descubreelsalvador.netlify.app/" target="_blank" rel="noopener">descubreelsalvador.netlify.app</a></p></li>
+          <li class="reveal"><span class="when">Landing page · Cafetería</span><h3>Cielo de Flores</h3><p>Sitio para una cafetería y pastelería en Antiguo Cuscatlán, con menú, promos, galería y un recomendador que te sugiere qué pedir según tu antojo. Primero una demo y después el sitio completo. <a href="projects/cielo-de-flores.html">Ver caso</a> · <a href="https://cafeflores.netlify.app/" target="_blank" rel="noopener">cafeflores.netlify.app</a></p></li>
+          <li class="reveal"><span class="when">Landing page · Barbería</span><h3>El Caballero</h3><p>Landing para una barbería clásica con servicios y precios, galería de trabajos y un formulario de reserva que envía la cita por WhatsApp. <a href="projects/el-caballero.html">Ver caso</a> · <a href="https://elcaballerobarber.netlify.app/" target="_blank" rel="noopener">elcaballerobarber.netlify.app</a></p></li>
+        </ol>
+      </div>
+
+      <div class="cv-block">
+        <p class="eyebrow">★ Software</p>
+        <h2>Programas de escritorio y consola</h2>
+        <ol class="timeline">
+          <li class="reveal"><span class="when">Software de escritorio · Proyecto académico · Universidad Don Bosco</span><h3>Blaugrana Management</h3><p>Sistema para administrar un club de fútbol: plantilla, contratos, partidos, rendimiento y bonificaciones, más planilla, ingresos, egresos, presupuesto y reportes con gráficos. Cada usuario entra con su rol. <a href="projects/blaugrana.html">Ver capturas</a></p></li>
+          <li class="reveal"><span class="when">Aplicación de consola · Proyecto académico · Programación de Algoritmos, UDB</span><h3>BancoSim ATM</h3><p>Cajero automático en consola con tarjeta y PIN, consulta de saldo, depósitos, retiros con límite diario, transferencias entre cuentas, historial y comprobante de cada operación. <a href="projects/bancosim.html">Ver capturas</a></p></li>
+        </ol>
+      </div>
+
+      <div class="cv-block">
+        <p class="eyebrow">★ Cómo trabajo</p>
+        <h2>Lo que puedes esperar de mí</h2>
+        <div class="grid grid-2">
+          <div class="card-paper reveal"><h3>Diseño con identidad</h3><p>Cada sitio se ve distinto porque cada negocio es distinto. Mira un cine, una clínica y una barbería lado a lado.</p></div>
+          <div class="card-paper alt reveal"><h3>Funciones que sirven</h3><p>Reservas, pedidos y cotizadores que le ahorran tiempo a tu negocio y a tus clientes.</p></div>
+          <div class="card-paper blue reveal"><h3>Código limpio</h3><p>Sitios rápidos, ordenados y con buenas prácticas de accesibilidad.</p></div>
+          <div class="card-paper reveal"><h3>Comunicación clara</h3><p>Avances con link en vivo y explicaciones sin tecnicismos.</p></div>
+        </div>
+      </div>
     </div>
-    <div class="card-paper">
-      <h3>★ Quick stats</h3>
-      <p>📁 18 proyectos web<br>🎨 Diseño + frontend<br>💻 HTML · CSS · JS · TS · C#<br>🗄️ Bases de datos<br>📈 Siempre aprendiendo</p>
+  </div>
+</section>
+</main>
+
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>¿Quieres trabajar conmigo?</h2>
+      <p>Escríbeme con tu idea y lo hacemos realidad.</p>
     </div>
-  </div>
-</section>
-
-<section class="container">
-  <p class="eyebrow">★ Portafolio</p>
-  <h2>18 proyectos clasificados por complejidad</h2>
-  <div class="grid grid-3 mt-3">
-    <div class="card-paper"><span class="sticker">7 proyectos</span><h3 style="margin-top:1rem">Páginas básicas</h3><p>Landing pages, portafolios y sitios informativos para presentar una idea, marca o negocio de forma clara y profesional.</p></div>
-    <div class="card-paper alt"><span class="sticker pink">8 proyectos</span><h3 style="margin-top:1rem">Páginas intermedias</h3><p>Sitios con mayor interacción, múltiples secciones, animaciones, formularios y experiencias más completas.</p></div>
-    <div class="card-paper blue"><span class="sticker blue">3 proyectos</span><h3 style="margin-top:1rem">Páginas premium</h3><p>Desarrollos elaborados con diseños personalizados, experiencias visuales avanzadas y estructuras de alto nivel.</p></div>
-  </div>
-</section>
-
-<section class="container">
-  <p class="eyebrow">★ Stack</p>
-  <h2>Tecnologías y conocimientos</h2>
-  <div class="grid grid-3 mt-3">
-    <div class="card-paper"><h3>Desarrollo Web</h3><p>HTML5 · CSS3 · JavaScript · TypeScript</p></div>
-    <div class="card-paper alt"><h3>Programación</h3><p>C# · Fundamentos de programación orientada a objetos</p></div>
-    <div class="card-paper blue"><h3>Bases de datos</h3><p>Diseño y manejo de BD · Estructuración de información · Conexión entre sistemas</p></div>
-  </div>
-  <p class="mt-3">Mi aprendizaje continúa constantemente, explorando nuevas tecnologías y herramientas para ampliar mis capacidades como desarrolladora y diseñadora digital.</p>
-</section>
-
-<section class="container">
-  <p class="eyebrow">★ Mi objetivo</p>
-  <h2>Diseño · Tecnología · Experiencia</h2>
-  <p class="mt-2">Crear experiencias digitales que no solamente tengan un diseño atractivo, sino que también sean funcionales, intuitivas y capaces de transmitir la identidad de cada proyecto.</p>
-  <div class="grid grid-3 mt-3">
-    <div class="card-paper"><h3>① Diseño visual</h3><p>Estética cuidada, identidad clara y composición editorial.</p></div>
-    <div class="card-paper alt"><h3>② Tecnología</h3><p>Código limpio, rendimiento y buenas prácticas frontend.</p></div>
-    <div class="card-paper blue"><h3>③ Experiencia</h3><p>Interfaces intuitivas y accesibles centradas en el usuario.</p></div>
+    <div class="btn-row">
+      <a class="btn" href="contact.html">Cotizar mi página →</a>
+      <a class="btn ghost" href="projects.html">Ver proyectos</a>
+    </div>
   </div>
 </section>
 
 <footer>
-  <div>© 2026 SCARLETT TORRES</div>
-  <div><a href="contact.html">CONTACTO</a></div>
+  <div class="foot">
+    <div>
+      <a class="logo" href="index.html">★ SCARLETT.T</a>
+      <p>Diseño y desarrollo de páginas web a medida para negocios con personalidad.</p>
+    </div>
+    <div>
+      <h4>Navegar</h4>
+      <ul>
+        <li><a href="projects.html">Proyectos</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="about.html">Sobre mí · CV</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hablemos</h4>
+      <ul>
+        <li><a data-email href="mailto:torresscarlett502@gmail.com">torresscarlett502@gmail.com</a></li>
+        <li data-whatsapp-wrap><a data-whatsapp href="https://wa.me/50372716441" target="_blank" rel="noopener">+503 7271 6441</a></li>
+        <li><a data-instagram href="https://instagram.com/scar_torxx_07" target="_blank" rel="noopener">@scar_torxx_07</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span data-year>2026</span> SCARLETT TORRES</span>
+    <span>HECHO A MANO CON HTML · CSS · JS</span>
+  </div>
 </footer>
+<a class="btn yellow small float-cta" href="contact.html">★ Cotizar</a>
 <script src="js/main.js"></script>
-</body></html>
+</body>
+</html>

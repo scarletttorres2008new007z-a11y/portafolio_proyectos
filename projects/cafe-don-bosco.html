@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Café Don Bosco — Caso de estudio · Scarlett Torres</title>
+<meta name="description" content="Sistema web completo para una cafetería: una tienda en línea donde el cliente personaliza su pedido y paga sin crear cuenta, y un panel de administración con punto de venta, inventario e historial. Todo comparte la misma base de datos.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Café Don Bosco — Caso de estudio · Scarlett Torres">
+<meta property="og:description" content="Sistema web completo para una cafetería: una tienda en línea donde el cliente personaliza su pedido y paga sin crear cuenta, y un panel de administración con punto de venta, inventario e historial. Todo comparte la misma base de datos.">
+<meta property="og:image" content="../assets/shots/don-bosco.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230a0a0a'/%3E%3Cpath d='M7 1h2v4h4v2h2v2h-2v2h-2v4H9v-2H7v2H5v-4H3V9H1V7h2V5h4z' fill='%23d9f24b'/%3E%3Cpath d='M7 5h2v6H7z' fill='%23ff2d87'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="wipe" aria-hidden="true"><span>★ SCARLETT.T</span></div>
+<div class="progress" aria-hidden="true"></div>
+
+<div class="marquee " aria-hidden="true"><div class="marquee-track">
+<span>CASO DE ESTUDIO ✦ CAFÉ DON BOSCO ✦ WEB + SISTEMA ✦ CAFETERÍA ✦</span>
+<span>CASO DE ESTUDIO ✦ CAFÉ DON BOSCO ✦ WEB + SISTEMA ✦ CAFETERÍA ✦</span>
+</div></div>
+
+<nav class="nav" aria-label="Principal">
+  <a class="logo" href="../index.html">★ SCARLETT.T</a>
+  <button class="burger" aria-expanded="false" aria-controls="menu">≡ MENÚ</button>
+  <ul id="menu">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="../projects.html">Proyectos</a></li>
+    <li><a href="../services.html">Servicios</a></li>
+    <li><a href="../about.html">Sobre mí · CV</a></li>
+    <li><a href="../contact.html">Contacto</a></li>
+    <li><a class="nav-cta" href="../contact.html">★ Cotizar proyecto</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+<section class="case-hero">
+  <div class="container">
+    <a class="back-link" href="../projects.html">← Volver a proyectos</a>
+    <div class="case-top">
+      <div>
+        <div class="tag-row">
+          <span class="sticker">★ Proyecto destacado</span>
+          <span class="sticker blue">Web + sistema</span>
+          <span class="sticker bone">Cafetería</span>
+          <span class="sticker blue">2026</span>
+        </div>
+        <h1>Café Don Bosco</h1>
+        <p class="lead">Sistema web completo para una cafetería: una tienda en línea donde el cliente personaliza su pedido y paga sin crear cuenta, y un panel de administración con punto de venta, inventario e historial. Todo comparte la misma base de datos.</p>
+        <div class="btn-row">
+          <a class="btn" href="https://cafe-don-bosco-production.up.railway.app" target="_blank" rel="noopener">Ver sitio en vivo ↗</a>
+          <a class="btn yellow" href="../contact.html?tipo=sistema">Quiero algo así</a>
+        </div>
+      </div>
+      <div class="window ">
+    <div class="window-bar"><span class="dots"><b></b><b></b><b></b></span><span class="url">cafe-don-bosco-production.up.railway.app</span></div>
+    <div class="shot"><span class="fallback">Captura de Café Don Bosco</span><img src="../assets/shots/don-bosco.jpg" alt="Captura de Café Don Bosco" width="1440" height="900" decoding="async"></div>
+  </div>
+    </div>
+    <div class="facts">
+      <div><span>Tipo</span><b>Web + sistema</b></div>
+      <div><span>Industria</span><b>Cafetería</b></div>
+      <div><span>Alcance</span><b>Tienda + panel de administración</b></div>
+      <div><span>Tecnologías</span><b>Java 17 · Jakarta EE (Servlets + JSP) · MySQL · Tomcat · JUnit 5 + Mockito</b></div>
+      <div><span>Estado</span><b>Publicado y en línea</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container grid grid-2">
+    <div>
+      <p class="eyebrow">★ Objetivo</p>
+      <h2>El reto</h2>
+      <p>Una cafetería vende en el mostrador y en línea, y las dos cosas tienen que cuadrar: el mismo inventario, los mismos precios y un solo historial de ventas, sin que nadie pueda manipular un precio desde el navegador.</p>
+    </div>
+    <div>
+      <p class="eyebrow">★ Proceso</p>
+      <h2>Cómo lo resolví</h2>
+      <p>Construí el sistema en Java con Servlets, JSP y JDBC, sin frameworks, para dominar el patrón MVC por dentro. La tienda y el panel usan una sola tabla de ventas con el mismo ciclo de estados (recibido, en preparación, listo y entregado), así el stock siempre cuadra. El servidor vuelve a calcular precios y stock en cada paso, y el proyecto tiene 83 pruebas unitarias con JUnit 5 y Mockito.</p>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <p class="eyebrow">★ Funciones</p>
+    <h2>Lo que hace el sitio</h2>
+    <div class="feature-list mt-2">
+      <div class="card-paper  reveal"><h3>Tienda sin registro</h3><p>El cliente ve el menú, busca, filtra por categoría y compra como invitado.</p></div>
+      <div class="card-paper alt reveal"><h3>Pedidos personalizados</h3><p>Tamaño, tipo de leche, nivel de azúcar y extras, con el precio recalculado al instante.</p></div>
+      <div class="card-paper blue reveal"><h3>Carrito sin recargar</h3><p>Los productos se agregan con fetch y el contador del carrito se actualiza en el momento.</p></div>
+      <div class="card-paper  reveal"><h3>Ticket de compra</h3><p>Se imprime, se descarga en PDF, llega por correo o se comparte por WhatsApp.</p></div>
+      <div class="card-paper alt reveal"><h3>Panel de administración</h3><p>Resumen del día, productos con poco stock, punto de venta del mostrador e historial de ventas.</p></div>
+      <div class="card-paper blue reveal"><h3>API REST</h3><p>Rutas públicas y de administrador, todas con el mismo formato de respuesta en JSON.</p></div>
+      <div class="card-paper  reveal"><h3>Seguridad</h3><p>Contraseñas con BCrypt, bloqueo tras 5 intentos fallidos, precios validados en el servidor y tickets con código aleatorio.</p></div>
+      <div class="card-paper alt reveal"><h3>83 pruebas unitarias</h3><p>Validaciones, carrito, inicio de sesión, estados de venta y horario de atención probados con JUnit 5 y Mockito.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <p class="eyebrow">★ Versiones</p>
+    <h2>Todos los links del proyecto</h2>
+    <div class="versions mt-2">
+      <div class="reveal">
+        <a href="https://cafe-don-bosco-production.up.railway.app/tienda" target="_blank" rel="noopener" aria-label="Abrir Tienda en vivo"><div class="window ">
+    <div class="window-bar"><span class="dots"><b></b><b></b><b></b></span><span class="url">cafe-don-bosco-production.up.railway.app/tienda</span></div>
+    <div class="shot"><span class="fallback">Captura de Café Don Bosco</span><img src="../assets/shots/don-bosco-tienda.jpg" alt="Captura de Café Don Bosco" width="1440" height="900" loading="lazy" decoding="async"></div>
+  </div></a>
+        <h3>Tienda</h3>
+        <p class="small muted">Donde el cliente ve el menú, personaliza su pedido y paga sin crear cuenta.</p>
+        <a class="btn small ghost mt-1" href="https://cafe-don-bosco-production.up.railway.app/tienda" target="_blank" rel="noopener">Abrir en vivo ↗</a>
+      </div>
+      <div class="reveal">
+        <a href="https://cafe-don-bosco-production.up.railway.app" target="_blank" rel="noopener" aria-label="Abrir Portal de entrada en vivo"><div class="window yellow">
+    <div class="window-bar"><span class="dots"><b></b><b></b><b></b></span><span class="url">cafe-don-bosco-production.up.railway.app</span></div>
+    <div class="shot"><span class="fallback">Captura de Café Don Bosco</span><img src="../assets/shots/don-bosco.jpg" alt="Captura de Café Don Bosco" width="1440" height="900" loading="lazy" decoding="async"></div>
+  </div></a>
+        <h3>Portal de entrada</h3>
+        <p class="small muted">El cliente entra a comprar y el administrador al panel.</p>
+        <a class="btn small ghost mt-1" href="https://cafe-don-bosco-production.up.railway.app" target="_blank" rel="noopener">Abrir en vivo ↗</a>
+      </div>
+      <div class="reveal">
+        <a href="https://cafe-don-bosco-production.up.railway.app/login" target="_blank" rel="noopener" aria-label="Abrir Panel de administración en vivo"><div class="window blue">
+    <div class="window-bar"><span class="dots"><b></b><b></b><b></b></span><span class="url">cafe-don-bosco-production.up.railway.app/login</span></div>
+    <div class="shot"><span class="fallback">Captura de Café Don Bosco</span><img src="../assets/shots/don-bosco-login.jpg" alt="Captura de Café Don Bosco" width="1440" height="900" loading="lazy" decoding="async"></div>
+  </div></a>
+        <h3>Panel de administración</h3>
+        <p class="small muted">Acceso privado para manejar ventas, inventario e historial.</p>
+        <a class="btn small ghost mt-1" href="https://cafe-don-bosco-production.up.railway.app/login" target="_blank" rel="noopener">Abrir en vivo ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section" id="galeria">
+  <div class="container">
+    <p class="eyebrow">★ Galería</p>
+    <h2>Capturas del sitio en vivo</h2>
+    <div class="screens mt-2">
+      <div class="carousel">
+        <div class="carousel-track">
+          <figure class="carousel-slide"><img src="../assets/shots/don-bosco.jpg" alt="Café Don Bosco, captura 1" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/don-bosco-tienda.jpg" alt="Café Don Bosco, captura 2" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/don-bosco-producto.jpg" alt="Café Don Bosco, captura 3" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/don-bosco-menu.jpg" alt="Café Don Bosco, captura 4" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/don-bosco-tienda-2.jpg" alt="Café Don Bosco, captura 5" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/don-bosco-login.jpg" alt="Café Don Bosco, captura 6" width="1440" height="900" loading="lazy" decoding="async"></figure>
+        </div>
+        <button class="carousel-btn prev" aria-label="Captura anterior">◀</button>
+        <button class="carousel-btn next" aria-label="Captura siguiente">▶</button>
+        <div class="carousel-dots"></div>
+      </div>
+      <div class="phone" aria-label="Versión para celular"><div class="screen"><img src="../assets/shots/don-bosco-movil.jpg" alt="Café Don Bosco en celular" width="780" height="1688" loading="lazy" decoding="async"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="container case-nav">
+  <a class="btn ghost" href="el-caballero.html">← El Caballero</a>
+  <a class="btn" href="lumiere-cine.html">Lumière Ciné →</a>
+</section>
+</main>
+
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>¿Quieres algo así para tu negocio?</h2>
+      <p>Puedo crear una página con funciones como las de Café Don Bosco, adaptada a tu marca y a tus clientes.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="../contact.html">Cotizar mi página →</a>
+      <a class="btn ghost" href="../projects.html">Ver proyectos</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div>
+      <a class="logo" href="../index.html">★ SCARLETT.T</a>
+      <p>Diseño y desarrollo de páginas web a medida para negocios con personalidad.</p>
+    </div>
+    <div>
+      <h4>Navegar</h4>
+      <ul>
+        <li><a href="../projects.html">Proyectos</a></li>
+        <li><a href="../services.html">Servicios</a></li>
+        <li><a href="../about.html">Sobre mí · CV</a></li>
+        <li><a href="../contact.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hablemos</h4>
+      <ul>
+        <li><a data-email href="mailto:torresscarlett502@gmail.com">torresscarlett502@gmail.com</a></li>
+        <li data-whatsapp-wrap><a data-whatsapp href="https://wa.me/50372716441" target="_blank" rel="noopener">+503 7271 6441</a></li>
+        <li><a data-instagram href="https://instagram.com/scar_torxx_07" target="_blank" rel="noopener">@scar_torxx_07</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span data-year>2026</span> SCARLETT TORRES</span>
+    <span>HECHO A MANO CON HTML · CSS · JS</span>
+  </div>
+</footer>
+<a class="btn yellow small float-cta" href="../contact.html">★ Cotizar</a>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BancoSim ATM — Caso de estudio · Scarlett Torres</title>
+<meta name="description" content="Cajero automático en consola con tarjeta y PIN, consulta de saldo, depósitos, retiros con límite diario, transferencias entre cuentas, historial y comprobante de cada operación.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BancoSim ATM — Caso de estudio · Scarlett Torres">
+<meta property="og:description" content="Cajero automático en consola con tarjeta y PIN, consulta de saldo, depósitos, retiros con límite diario, transferencias entre cuentas, historial y comprobante de cada operación.">
+<meta property="og:image" content="../assets/shots/cajero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230a0a0a'/%3E%3Cpath d='M7 1h2v4h4v2h2v2h-2v2h-2v4H9v-2H7v2H5v-4H3V9H1V7h2V5h4z' fill='%23d9f24b'/%3E%3Cpath d='M7 5h2v6H7z' fill='%23ff2d87'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="wipe" aria-hidden="true"><span>★ SCARLETT.T</span></div>
+<div class="progress" aria-hidden="true"></div>
+
+<div class="marquee blue" aria-hidden="true"><div class="marquee-track">
+<span>CASO DE ESTUDIO ✦ BANCOSIM ATM ✦ APLICACIÓN DE CONSOLA ✦ BANCA ✦</span>
+<span>CASO DE ESTUDIO ✦ BANCOSIM ATM ✦ APLICACIÓN DE CONSOLA ✦ BANCA ✦</span>
+</div></div>
+
+<nav class="nav" aria-label="Principal">
+  <a class="logo" href="../index.html">★ SCARLETT.T</a>
+  <button class="burger" aria-expanded="false" aria-controls="menu">≡ MENÚ</button>
+  <ul id="menu">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="../projects.html">Proyectos</a></li>
+    <li><a href="../services.html">Servicios</a></li>
+    <li><a href="../about.html">Sobre mí · CV</a></li>
+    <li><a href="../contact.html">Contacto</a></li>
+    <li><a class="nav-cta" href="../contact.html">★ Cotizar proyecto</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+<section class="case-hero">
+  <div class="container">
+    <a class="back-link" href="../projects.html">← Volver a proyectos</a>
+    <div class="case-top">
+      <div>
+        <div class="tag-row">
+          
+          <span class="sticker dark">Aplicación de consola</span>
+          <span class="sticker bone">Banca</span>
+          <span class="sticker blue">2026</span>
+        </div>
+        <h1>BancoSim ATM</h1>
+        <p class="lead">Cajero automático en consola con tarjeta y PIN, consulta de saldo, depósitos, retiros con límite diario, transferencias entre cuentas, historial y comprobante de cada operación.</p>
+        <div class="btn-row">
+          <a class="btn" href="#galeria">Ver capturas ↓</a>
+          <a class="btn yellow" href="../contact.html?tipo=sistema">Quiero algo así</a>
+        </div>
+      </div>
+      <div class="window ">
+    <div class="window-bar"><span class="dots"><b></b><b></b><b></b></span><span class="url">BancoSim ATM · consola</span></div>
+    <div class="shot"><span class="fallback">Captura de BancoSim ATM</span><img src="../assets/shots/cajero.jpg" alt="Captura de BancoSim ATM" width="1440" height="900" decoding="async"></div>
+  </div>
+    </div>
+    <div class="facts">
+      <div><span>Tipo</span><b>Aplicación de consola</b></div>
+      <div><span>Industria</span><b>Banca</b></div>
+      <div><span>Alcance</span><b>7 operaciones bancarias</b></div>
+      <div><span>Tecnologías</span><b>Aplicación de consola · Lógica y algoritmos</b></div>
+      <div><span>Estado</span><b>Proyecto académico · Programación de Algoritmos, UDB</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container grid grid-2">
+    <div>
+      <p class="eyebrow">★ Objetivo</p>
+      <h2>El reto</h2>
+      <p>Un cajero tiene que ser simple para el usuario pero estricto por dentro: validar la tarjeta y el PIN, no dejar retirar más de lo permitido y que cada saldo cuadre después de cada operación.</p>
+    </div>
+    <div>
+      <p class="eyebrow">★ Proceso</p>
+      <h2>Cómo lo resolví</h2>
+      <p>Armé un menú claro con siete opciones y pantallas dibujadas con marcos en la consola. Antes de cada movimiento el programa muestra un resumen para confirmar, valida montos y límites, actualiza los saldos de las dos cuentas en una transferencia y entrega un comprobante con fecha y hora.</p>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <p class="eyebrow">★ Funciones</p>
+    <h2>Lo que hace el programa</h2>
+    <div class="feature-list mt-2">
+      <div class="card-paper  reveal"><h3>Acceso con tarjeta y PIN</h3><p>Tres intentos para el PIN y una sesión que expira por inactividad.</p></div>
+      <div class="card-paper alt reveal"><h3>Saldo y depósitos</h3><p>Consulta el saldo y deposita con confirmación del nuevo saldo antes de aplicarlo.</p></div>
+      <div class="card-paper blue reveal"><h3>Retiros con reglas</h3><p>Límite diario de $1,000 y solo múltiplos de $5, con mensajes claros cuando algo no se puede.</p></div>
+      <div class="card-paper  reveal"><h3>Transferencias</h3><p>Busca la cuenta destino, muestra al titular y actualiza los saldos de ambas cuentas.</p></div>
+      <div class="card-paper alt reveal"><h3>Historial</h3><p>Últimos movimientos, historial completo y filtro por tipo de operación.</p></div>
+      <div class="card-paper blue reveal"><h3>Comprobantes</h3><p>Cada operación termina con un recibo con fecha, hora, tarjeta, monto y saldo.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="case-section" id="galeria">
+  <div class="container">
+    <p class="eyebrow">★ Galería</p>
+    <h2>Capturas del programa</h2>
+    <div class="screens mt-2">
+      <div class="carousel">
+        <div class="carousel-track">
+          <figure class="carousel-slide"><img src="../assets/shots/cajero.jpg" alt="BancoSim ATM, captura 1" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/cajero-bienvenida.jpg" alt="BancoSim ATM, captura 2" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/cajero-login.jpg" alt="BancoSim ATM, captura 3" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/cajero-saldo.jpg" alt="BancoSim ATM, captura 4" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/cajero-deposito.jpg" alt="BancoSim ATM, captura 5" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/cajero-limite.jpg" alt="BancoSim ATM, captura 6" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/cajero-retiro.jpg" alt="BancoSim ATM, captura 7" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/cajero-transferencia.jpg" alt="BancoSim ATM, captura 8" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="carousel-slide"><img src="../assets/shots/cajero-historial.jpg" alt="BancoSim ATM, captura 9" width="1440" height="900" loading="lazy" decoding="async"></figure>
+        </div>
+        <button class="carousel-btn prev" aria-label="Captura anterior">◀</button>
+        <button class="carousel-btn next" aria-label="Captura siguiente">▶</button>
+        <div class="carousel-dots"></div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="container case-nav">
+  <a class="btn ghost" href="../projects.html#software">← Todos los proyectos</a>
+  <a class="btn" href="blaugrana.html">Blaugrana Management →</a>
+</section>
+</main>
+
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>¿Necesitas un sistema para tu negocio?</h2>
+      <p>Puedo crear un sistema con funciones como las de BancoSim ATM, a la medida de cómo trabaja tu equipo.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="../contact.html">Cotizar mi página →</a>
+      <a class="btn ghost" href="../projects.html">Ver proyectos</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div>
+      <a class="logo" href="../index.html">★ SCARLETT.T</a>
+      <p>Diseño y desarrollo de páginas web a medida para negocios con personalidad.</p>
+    </div>
+    <div>
+      <h4>Navegar</h4>
+      <ul>
+        <li><a href="../projects.html">Proyectos</a></li>
+        <li><a href="../services.html">Servicios</a></li>
+        <li><a href="../about.html">Sobre mí · CV</a></li>
+        <li><a href="../contact.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hablemos</h4>
+      <ul>
+        <li><a data-email href="mailto:torresscarlett502@gmail.com">torresscarlett502@gmail.com</a></li>
+        <li data-whatsapp-wrap><a data-whatsapp href="https://wa.me/50372716441" target="_blank" rel="noopener">+503 7271 6441</a></li>
+        <li><a data-instagram href="https://instagram.com/scar_torxx_07" target="_blank" rel="noopener">@scar_torxx_07</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span data-year>2026</span> SCARLETT TORRES</span>
+    <span>HECHO A MANO CON HTML · CSS · JS</span>
+  </div>
+</footer>
+<a class="btn yellow small float-cta" href="../contact.html">★ Cotizar</a>
+<script src="../js/main.js"></script>
+</body>
+</html>
